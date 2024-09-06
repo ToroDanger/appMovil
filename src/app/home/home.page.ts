@@ -14,16 +14,16 @@ export class HomePage implements OnInit {
     pw: "",
   };
 
-  constructor(private nCtrl:NavController ) { }
+  constructor(private nCtrl:NavController ) {}
 
-  goSeg() {
+  goSegunda() {
     let nExtras:NavigationExtras = {
       queryParams:{
         dataUser: this.usuario.user,
         dataPw: this.usuario.pw
       }
     };
-    this.nCtrl.navigateForward(['/perfil'],nExtras);
+    this.nCtrl.navigateForward(['/perfil'],nExtras)
 
   }
 

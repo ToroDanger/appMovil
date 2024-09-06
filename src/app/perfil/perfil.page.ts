@@ -9,8 +9,7 @@ import { ActivatedRoute } from '@angular/router';
 export class PerfilPage implements OnInit {
   diccionario = {
     user:"",
-    pw:"",
-    email:""
+    pw:""
   }
 
   constructor(private aRoute:ActivatedRoute) { }
@@ -20,7 +19,6 @@ export class PerfilPage implements OnInit {
     this.aRoute.queryParams.subscribe(params => {
       this.diccionario.user = params['dataUser']
       this.diccionario.pw = params['dataPw']
-      this.diccionario.email = params['dataEmail']
     });
   }
 

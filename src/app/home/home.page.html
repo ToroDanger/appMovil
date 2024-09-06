@@ -10,10 +10,10 @@
 <ion-content >
   <div id="container">
     <h1>Iniciar Sesión</h1>
-    <ion-input type="text" class="inputI" placeholder="Nombre usuario"></ion-input>
-    <ion-input type="password" class="inputI" placeholder="Contraseña"></ion-input>
+    <ion-input type="text" class="inputI" placeholder="Nombre usuario" [(ngModel)]="usuario.user"></ion-input>
+    <ion-input type="password" class="inputI" placeholder="Contraseña" [(ngModel)]="usuario.pw"></ion-input>
     <div class="btnD">
-      <button (click)="goSeg" ion-button [routerLink]="['/op-usuario']" class="btn">Iniciar sesion</button>
+      <ion-button (click)="goSegunda"></ion-button>
       <button ion-button [routerLink]="['/formulario']" class="btn">Registrarte</button>
     </div>
   </div>
