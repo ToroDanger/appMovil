@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+
+  <div id="container">
+    <h1>¿Que deseas hacer hoy?</h1>
+    <div class="btnD">
+      <button ion-button [routerLink]="['/list-viaje']" class="btn">Pasajero</button>
+      <button ion-button [routerLink]="['/form-conductor']" class="btn">Conductor</button>
+    </div>
+  </div>
+
+</ion-content>

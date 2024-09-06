@@ -1,0 +1,20 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="container">
+    <h1>Regristrarte en NombreApp</h1>
+    <ion-input type="text" class="inputF" placeholder="Nombre usuario" ></ion-input>
+    <ion-input type="password" class="inputF" placeholder="Contraseña" ></ion-input>
+    <ion-input type="email" class="inputF" placeholder="Correo Electronico" ></ion-input>
+    <div>
+      <button ion-button [routerLink]="['/home']">Registrar</button>
+    </div>
+  </div>
+</ion-content>
