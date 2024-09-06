@@ -1,11 +1,18 @@
 .btn{
-    background-color: brown;
+    background-color: #229799;
     color: white;
     padding: 10px 10px 10px 10px;
     border-radius: 15px;
     font-size: 15px;
-    margin: 20px 10px 10px 10px;
+    margin: 0px 10px 10px 10px;
 }
+
+ion-input{
+    background-color: #229799;
+    border-radius: 10px;
+    color: white;
+}
+
 
 #container{
     text-align: center;
@@ -13,4 +20,11 @@
     left: 20px;
     right: 20px;
     top: 20%;
+}
+
+h1{
+    text-align: center;
+    color: #424242;
+    font-size: 30px;
+    margin-bottom: 10px;
 }
