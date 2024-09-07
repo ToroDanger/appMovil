@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-op-usuario',
@@ -6,10 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./op-usuario.page.scss'],
 })
 export class OpUsuarioPage implements OnInit {
+  diccionario = {
+    user:"",
+    pw:""
+  }
 
-  constructor() { }
+  constructor(private aRoute:ActivatedRoute) { }
 
   ngOnInit() {
+    this.aRoute.queryParams.subscribe(params => {
+      this.diccionario.user = params['dataUser']
+      this.diccionario.pw = params['dataPw']
+    });
   }
 
 }

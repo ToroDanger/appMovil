@@ -11,16 +11,16 @@
 <ion-content>
 
   <div id="container">
-    <h1>¿Que deseas hacer hoy?</h1>
+    <h1>¿Que deseas hacer hoy {{diccionario.user}}?</h1>
     <div class="btnD">
       <button ion-button [routerLink]="['/list-viaje']" class="btn">Pasajero</button>
       <button ion-button [routerLink]="['/form-conductor']" class="btn">Conductor</button>
     </div>
   </div>
-
 </ion-content>
-<ion-footer>
-  <ion-toolbar>
-    <ion-title>Footer</ion-title>
-  </ion-toolbar>
-</ion-footer>
+
+  <ion-footer>
+    <ion-toolbar>
+      <ion-title class="foot">NombreAPP</ion-title>
+    </ion-toolbar>
+  </ion-footer>

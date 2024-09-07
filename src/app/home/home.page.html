@@ -13,7 +13,7 @@
     <ion-input type="text" class="inputI" placeholder="Nombre usuario" [(ngModel)]="usuario.user"></ion-input>
     <ion-input type="password" class="inputI" placeholder="Contraseña" [(ngModel)]="usuario.pw"></ion-input>
     <div class="btnD">
-      <button (click)="goSegunda" ion-button [routerLink]="['/op-usuario']" class="btn">Registrarte</button>
+      <button (click)="goSegunda()" ion-button [routerLink]="['/op-usuario']" class="btn">Registrarte</button>
       <button ion-button [routerLink]="['/formulario']" class="btn">Registrarte</button>
     </div>
   </div>
@@ -21,6 +21,6 @@
 </ion-content>
 <ion-footer>
   <ion-toolbar>
-    <ion-title>Footer</ion-title>
+    <ion-title class="foot">NombreAPP</ion-title>
   </ion-toolbar>
 </ion-footer>

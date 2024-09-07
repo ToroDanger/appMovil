@@ -23,7 +23,7 @@ export class HomePage implements OnInit {
         dataPw: this.usuario.pw
       }
     };
-    this.nCtrl.navigateForward(['/perfil'],nExtras)
+    this.nCtrl.navigateForward(['/op-usuario'],nExtras)
 
   }
 
