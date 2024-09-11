@@ -16,7 +16,7 @@ export class InfoViajePage implements OnInit {
 
   ngAfterViewInit(){
     this.animation = this.aCtrl.create()
-    .addElement(document.querySelector('.square') as HTMLElement)
+    .addElement(document.querySelector('.azul') as HTMLElement)
     .iterations(Infinity)
     .duration(1000)
     .keyframes([

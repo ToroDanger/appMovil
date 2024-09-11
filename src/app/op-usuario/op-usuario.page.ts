@@ -24,7 +24,7 @@ export class OpUsuarioPage implements OnInit {
   }
   ngAfterViewInit(){
     this.animation = this.aCtrl.create()
-    .addElement(document.querySelector('.square') as HTMLElement)
+    .addElement(document.querySelector('.auto') as HTMLElement)
     .iterations(Infinity)
     .duration(7000)
     .keyframes([
