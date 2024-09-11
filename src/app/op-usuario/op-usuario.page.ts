@@ -28,7 +28,7 @@ export class OpUsuarioPage implements OnInit {
     .iterations(Infinity)
     .duration(7000)
     .keyframes([
-      { offset: 0, transform: 'translateY(0px) rotate(0deg)', opacity: '1' },
+      { offset: 0, transform: 'translateY(0px) rotate(1deg)', opacity: '1' },
       { offset: 0.5, transform: 'translateY(0px) rotate(360deg)', opacity: '1' },
       { offset: 0.8, transform: 'translateY(0px) rotate(360deg)', opacity: '0.5 ' }
     ]);

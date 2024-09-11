@@ -3,11 +3,14 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { InfoViajePage } from './info-viaje.page';
 
+
 const routes: Routes = [
   {
     path: '',
     component: InfoViajePage
-  }
+  },
+  
+  
 ];
 
 @NgModule({

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Animation, AnimationController } from '@ionic/angular';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-info-viaje',
@@ -8,7 +9,7 @@ import { Animation, AnimationController } from '@ionic/angular';
 })
 export class InfoViajePage implements OnInit {
   private animation!:Animation;
-  constructor(private aCtrl:AnimationController) { }
+  constructor(private aCtrl:AnimationController, private navCtrl: NavController) { }
 
   ngOnInit() {
   }
@@ -16,16 +17,19 @@ export class InfoViajePage implements OnInit {
   ngAfterViewInit(){
     this.animation = this.aCtrl.create()
     .addElement(document.querySelector('.square') as HTMLElement)
-    .iterations(1)
+    .iterations(Infinity)
     .duration(1000)
     .keyframes([
-      { offset: 0, transform: 'translateY(0px) rotate(0deg)', opacity: '1' },
-      { offset: 0.5, transform: 'translateY(300px) rotate(180deg)', opacity: '1' },
-      { offset: 0.8, transform: 'translateY(600px) rotate(360deg)', opacity: '0.5 ' }
+      { offset: 0, transform: 'scale(0) rotate(180deg)', opacity: '1' },
+      { offset: 0.5, transform: 'scale(50) rotate(360deg)', opacity: '0.7' },
+      { offset: 1, transform: 'scale(100) rotate(720deg)', opacity: '1' }
     ]);
    
   }
   ejecutar(){
     this.animation.play();
+    setTimeout(() => {
+      this.navCtrl.navigateRoot('/list-viaje');
+    }, 700);
   }
 }
